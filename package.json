@@ -1,0 +1,21 @@
+{
+  "name": "crud-node-mysql",
+  "version": "1.0.0",
+  "description": "crud de node , express y mysql",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": " node ./index.js"
+  },
+  "keywords": [
+    "crud",
+    "express",
+    "mysql",
+    "api"
+  ],
+  "author": "christian tejada",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
