@@ -8,6 +8,14 @@ class Server {
     // hace una busqueda en las variables de entorno de la variable PORT y si no hay
     // indica que el puerto sera 5000
     this.puerto = process.env.PORT || 5000;
+    this.rutas();
+  }
+
+  rutas() {
+    this.app.get("/", (req, res) => {
+      console.log("El cliente me llama");
+      return res.status(200).send("Bienvenido a mi API");
+    });
   }
   iniciarServidor() {
     // se queda escuchando al servidor que se levanta mediante un determinado puerto
